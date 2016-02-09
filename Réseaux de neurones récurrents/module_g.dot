@@ -1,0 +1,35 @@
+digraph G {
+	graph [bb="0,0,257.39,412.7"];
+	node [label="\N",
+		shape=oval
+	];
+	n1	 [height=0.74639,
+		label="Node1\nmodule = nn.LogSoftMax",
+		pos="128.69,116.61",
+		tooltip="[tme6.lua]:65_",
+		width=3.1623];
+	n2	 [height=0.74639,
+		label="Node2\ninput = {}",
+		pos="128.69,26.87",
+		tooltip="[[C]]:-1_",
+		width=1.4535];
+	n1 -> n2	 [pos="e,128.69,53.874 128.69,89.285 128.69,81.319 128.69,72.428 128.69,63.939"];
+	n3	 [height=0.74639,
+		label="Node3\nmodule = nn.Linear(10 -> 51)",
+		pos="128.69,206.35",
+		tooltip="[tme6.lua]:64_",
+		width=3.5748];
+	n3 -> n1	 [pos="e,128.69,143.61 128.69,179.03 128.69,171.06 128.69,162.17 128.69,153.68"];
+	n4	 [height=0.74639,
+		label="Node4\nmodule = nn.Identity",
+		pos="128.69,296.09",
+		tooltip="[tme6.lua]:63_",
+		width=2.6124];
+	n4 -> n3	 [pos="e,128.69,233.35 128.69,268.77 128.69,260.8 128.69,251.91 128.69,243.42"];
+	n5	 [height=0.74639,
+		label="Node5\ninput = {}",
+		pos="128.69,385.83",
+		tooltip="[[C]]:-1_",
+		width=1.4535];
+	n5 -> n4	 [pos="e,128.69,323.09 128.69,358.51 128.69,350.54 128.69,341.65 128.69,333.16"];
+}
